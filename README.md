@@ -2,7 +2,25 @@
 
 ## Files
 
+### Python
+
 All analysis is done in `analysis.py`
+
+to run:
+
+```sh
+pip install pandas
+pip install matplotlib
+pip install seaborn
+```
+
+Uncomment whichever function calls for visualisations you'd like to see
+
+```sh
+python3 analysis.py
+```
+
+### Data
 
 raw csv of data is in `Crime_Reports20240701.csv`
 
