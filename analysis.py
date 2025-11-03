@@ -211,7 +211,7 @@ def find_comparible_crime_levels_in_prior_years():
     # Find the latest date in 2024
     latest_2024_date = df[df['Year'] == 2024]['Crime Date Time'].max()
 
-    # Filter each prior year to only include data up to that date (month and day)
+    # Filter each prior year to only include data up to that date
     cutoff_month = latest_2024_date.month
     cutoff_day = latest_2024_date.day
 
@@ -222,7 +222,7 @@ def find_comparible_crime_levels_in_prior_years():
     )
     filtered_df = df[mask]
 
-    # Now you can group and compare crime levels for these partial years
+    # Group and compare crime levels for these partial years
     crime_counts = filtered_df.groupby('Year').size()
     print(crime_counts)
 
